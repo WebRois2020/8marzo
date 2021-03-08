@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="content-language" content="es">
+
+
+	<title>Mi sitio web</title>
+	<meta name="description" content="Mi sitio web">
+	<meta name="keywords" content="sitio, web">
+
+	<link rel="index" href="./" title="Inicio">
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,900&display=swap');
+		html,
+		body,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		article,
+		aside,
+		canvas,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		output,
+		ruby,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		/* HTML5 reset para antiguos browsers */
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section {
+			display: block;
+
+		}
+
+		body {
+			line-height: 1;
+		}
+
+		ol,
+		ul {
+			list-style: none;
+		}
+
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0
+		}
+
+		/*Acaba el reset */
+
+		body {
+			font-size: 16px;
+			/*font-family: Georgia, "Times New Roman", Times, serif;*/
+			color: #444;
+			background-color: #CCC;
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin-bottom: .5em;
+			font-weight: bold;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		
+
+		#logo {
+			width: 100%;
+			height: 50%;
+			background-color:white; 
+		}
+
+		h2 {
+			display: block;
+			font-size: 150%;
+			margin: 1em 16px;
+			border-bottom: 1px solid #d9d9d9;
+			color: #1dd8cf;
+			text-shadow: 1px 1px 1px #ccc;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+		}
+    
+    .rusa{
+        float:right;
+      
+    }
+
+		h3 {
+			font-size: 100%;
+		}
+
+		p,
+		h3 {
+			padding: .5em;
+			padding-bottom: 0;
+			line-height: 1.5
+		}
+		li{
+			list-style-type: circle;
+			list-style-position: inside;
+			font-family: 'Montserrat', sans-serif;
+			margin-top:0.5em;
+		}
+
+		header {
+			text-align: center;
+			/*background-color: #888;*/
+			color: white;
+			margin-bottom: 1em; 
+		}
+
+		#container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0;
+			background-color: white;
+			box-shadow: 0px 0px 7px 1px #888;
+		}
+
+		#container .row {
+
+			padding: 0.5em;
+		}
+
+		header nav {
+			background-color:black;
+			margin: 0;
+			width: 96.8%;
+			padding: 1em;
+			display: inline-block;
+
+		}
+
+		header nav a {
+			font-family: 'Montserrat', sans-serif;
+			list-style: none;
+			width: 100%;
+			margin:0;
+			padding: 1em;
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			;
+
+		}
+
+		header nav a:hover {
+			color: #85f0da;
+
+		}
+
+		header nav:after,
+		.row:after {
+			content: " ";
+			display: table;
+			clear: both;
+
+		}
+
+		#contenido {
+			margin: 0;
+			padding: 0;
+		}
+
+		#contenido article {
+			float: left;
+			width: 90%;
+			padding: .5em;
+			margin: 0.2em;
+		}
+
+		#contenido article div {
+			border: 1px solid #d9d9d9;
+			padding-bottom: 1em;
+		}
+
+		.text p {
+			padding: 0 1em 2em 1em;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		img {
+			width: 40%;
+			margin: 0em 0.5em 0em 0em;
+			float: left;
+		}
+
+		.imaxe img {
+			width: 100%;
+			margin: 0.2em 0em 0.2em 0em;
+		}
+
+		footer {
+			max-width: 960px;
+			min-height: 50px;
+			margin: 0 auto;
+			font-size: 90%;
+			/*font-style: italic;*/
+			color:white;
+			background-color: #222;
+			margin: 0;
+			padding:1.5em 0em 0em 0em;
+			text-align: center;
+			width:100%;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+		p{
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		@media only screen and (max-width:768px) and (min-width:481px) {
+			#contenido article {
+				width: 50%;
+				padding-bottom: 0;
+	
+			}
+			#contenido article div {
+				height: 190px;
+
+			}
+			header nav li {
+				font-size: 80%;
+
+			}
+		}
+
+		@media only screen and (max-width:480px) {
+			#contenido article {
+				width: 100%;
+				padding-bottom: 0;
+			}
+			h2 {
+				font-size: 130%;
+			}
+			header nav li {
+				float: none;
+				width: 100%;
+				border-bottom: 1px solid #777;
+			}
+		}
+    .rusa{
+        margin: 1em 0 0.5em 1em;
+    }
+    .womens{
+            margin: 1em 1em 0.5em 0;
+    }
+    .dinamarca{
+            margin-top:0.5em;
+    }
+	</style>
+
+
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<img id="logo"  src="cabecera2.png"> 
+			<nav>
+				<a href="index.html">8 de Marzo</a>
+				<a href="mujer_antigüedad.html">La mujer en la antigüedad</a>
+				<a href="mujer_actual.html">La mujer en la actualidad </a>
+				<a href="Asociaciones.html">¿Realmente somos tan diferentes?</a>
+			</nav>
+		</header>
+		<section id="contenido">
+			<h2>¿Por qué se celebra el 8 de Marzo?</h2>
+			<div class="row">
+				<article>
+					<h3>Todas las mujeres se unen el 8 de marzo para conmemorar esta fecha tan importante</h3>
+					<p>La necesidad de conmemorar un Día Internacional de la Mujer nace al final del siglo XIX, después de la Revolución Industrial. Este fue un periodo histórico que transformó la economía y el modo de trabajo desde finales del siglo XVIII y principios del siglo XIX. Sin embargo, uno de los problemas más grandes era que muchas mujeres eran explotadas y ninguna ley las protegía.<br>
+					El 8 de marzo de 1857, las mujeres que trabajaban en la industria textil, que eran llamadas “garment workers” en inglés, en Nueva York, organizaron una huelga. Ellas peleaban para que hubiera salarios más justos y condiciones laborales más humanas.  Sin embargo, al momento de alzar la voz, los agentes de la policía las detienen.<br> <img class="womens" src="imaxes/womens.jpg">
+					Dos años más tarde, las manifestantes crearon su primer sindicato para pelear por sus derechos.<br>
+					51 años después, el 8 de marzo de 1908, 15,000 mujeres vuelven a tomar las calles de Nueva York para exigir un aumento de sueldo, menos horas de trabajo, derecho al voto y  prohibir el trabajo infantil. El eslogan que utilizaron fue “Pan y Rosas”. Ya que, el pan representaba la seguridad económica, y las rosas, una mejor calidad de vida.
+					El día 28 de febrero de 1909 se celebró en todo el territorio de Estados Unidos el Día Nacional de la Mujer. La fecha elegida fue el último domingo de febrero.</p>
+
+					<h3 class="dinamarca">En Dinamarca se propone un Día Internacional de la Mujer.</h3>
+					<p>En el año de 1910, en Copenhague, se celebró una conferencia internacional entre diferentes naciones del mundo. En este encuentro participaron más de 17 países y acudieron cientos de participantes. Una de las propulsoras fue Clara Zetkin.<br>
+
+					En 1911 se celebra por primera vez el Día Internacional de la Mujer en varios países de Europa y Estados Unidos. El día elegido fue el 19 de marzo.</p>
+					<h3>Una fecha clave:</h3>
+					<p>Una terrible tragedia ocurrió el 25 de marzo de 1911. Ya que, más de 100 trabajadoras textiles, mujeres inmigrantes en su mayoría de Europa del Este e Italia, perdieron la vida en un incendio en la fábrica de Triangle Shirtwaist en Nueva York.<br>
+					Un total de 123 trabajadoras y 23 hombres murieron. El número de heridos fue de 70. La víctima de más grande tenía 43 años y la más joven, 14 años. Esto impulsó a las mujeres a continuar la lucha.</p>
+
+					<h3>Los movimientos feministas, durante la Revolución Rusa de 1917, también fueron muy importantes.</h3>
+					<p>Al momento de caer la monarquía en Rusia, un gran número mujeres se encontraban en huelga para exigir mejores condiciones de vida. Por lo que, el gobierno provisional concedió el voto femenino el 23 de febrero de 1917, según el calendario juliano, o el 8 de marzo, acorde al calendario gregoriano.<br>  
+                   
+                        <img class="rusa" src="imaxes/revolucionrusa.jpg">
+                    
+                    No fue hasta después de la Segunda Guerra Mundial que más países también se unieron y comenzaron a conmemora el Día de la Mujer. En el año de 1975, las Naciones Unidas celebraron por primera vez el Día Internacional de la Mujer el 8 de marzo. Hoy en día, la lucha sigue por erradicar la violencia de género y lograr que exista una igualdad entre mujeres y hombres. 					El 8 de marzo de 1857, las mujeres que trabajaban en la industria textil, que eran llamadas “garment workers” en inglés, en Nueva York, organizaron una huelga. Ellas peleaban para que hubiera salarios más justos y condiciones laborales más humanas.  Sin embargo, al momento de alzar la voz, los agentes de la policía las detienen.</p>
+                        
+            
+                </article>
+                
+					
+					
+				
+		
+	</div>
+	<div class="footer">
+	<footer>&copy;2021   Fátima Plata Rueda & María Martinez Ramos</footer>
+	</div>
+</section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="content-language" content="es">
+
+
+	<title>Mi sitio web</title>
+	<meta name="description" content="Mi sitio web">
+	<meta name="keywords" content="sitio, web">
+
+	<link rel="index" href="./" title="Inicio">
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,900&display=swap');
+		html,
+		body,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		article,
+		aside,
+		canvas,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		output,
+		ruby,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		/* HTML5 reset para antiguos browsers */
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section {
+			display: block;
+
+		}
+
+		body {
+			line-height: 1;
+		}
+
+		ol,
+		ul {
+			list-style: none;
+		}
+
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0
+		}
+
+		/*Acaba el reset */
+
+		body {
+			font-size: 16px;
+			/*font-family: Georgia, "Times New Roman", Times, serif;*/
+			color: #444;
+			background-color: #CCC;
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin-bottom: .5em;
+			font-weight: bold;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		
+
+		#logo {
+			width: 100%;
+			height: 50%;
+			background-color:white; 
+		}
+
+		h2 {
+			display: block;
+			font-size: 150%;
+			margin: 1em 16px;
+			border-bottom: 1px solid #d9d9d9;
+			color: #1dd8cf;
+			text-shadow: 1px 1px 1px #ccc;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+		}
+
+		h3 {
+			font-size: 100%;
+		}
+
+		p,
+		h3 {
+			padding: .5em;
+			padding-bottom: 0;
+			line-height: 1.5
+		}
+		li{
+			list-style-type: circle;
+			list-style-position: inside;
+			font-family: 'Montserrat', sans-serif;
+			margin-top:0.5em;
+		}
+
+		header {
+			text-align: center;
+			/*background-color: #888;*/
+			color: white;
+			margin-bottom: 1em; 
+		}
+
+		#container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0;
+			background-color: white;
+			box-shadow: 0px 0px 7px 1px #888;
+		}
+
+		#container .row {
+
+			padding: 0.5em;
+		}
+
+		header nav {
+			background-color:black;
+			margin: 0;
+			width: 96.8%;
+			padding: 1em;
+			display: inline-block;
+
+		}
+
+		header nav a {
+			font-family: 'Montserrat', sans-serif;
+			list-style: none;
+			width: 100%;
+			margin:0;
+			padding: 1em;
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			;
+
+		}
+
+		header nav a:hover {
+			color: #85f0da;
+
+		}
+
+		header nav:after,
+		.row:after {
+			content: " ";
+			display: table;
+			clear: both;
+
+		}
+
+		#contenido {
+			margin: 0;
+			padding: 0;
+		}
+
+		#contenido article {
+			float: left;
+			width: 90%;
+			padding: .5em;
+			margin: 0.2em;
+		}
+
+		#contenido article div {
+			border: 1px solid #d9d9d9;
+			padding-bottom: 1em;
+		}
+
+		.text p {
+			padding: 0 1em 2em 1em;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		img {
+			width: 40%;
+			margin: 0em 0.5em 0em 0em;
+			float: left;
+		}
+
+		.imaxe img {
+			width: 100%;
+			margin: 0.2em 0em 0.2em 0em;
+		}
+
+		footer {
+			max-width: 960px;
+			min-height: 50px;
+			margin: 0 auto;
+			font-size: 90%;
+			/*font-style: italic;*/
+			color:white;
+			background-color: #222;
+			margin: 0;
+			padding:1.5em 0em 0em 0em;
+			text-align: center;
+			width:100%;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+		p{
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		@media only screen and (max-width:768px) and (min-width:481px) {
+			#contenido article {
+				width: 50%;
+				padding-bottom: 0;
+	
+			}
+			#contenido article div {
+				height: 190px;
+
+			}
+			header nav li {
+				font-size: 80%;
+
+			}
+		}
+
+		@media only screen and (max-width:480px) {
+			#contenido article {
+				width: 100%;
+				padding-bottom: 0;
+			}
+			h2 {
+				font-size: 130%;
+			}
+			header nav li {
+				float: none;
+				width: 100%;
+				border-bottom: 1px solid #777;
+			}
+        
+            .actual{
+                margin: 1em 1.5em 1em 0;
+            }
+		
+
+	</style>
+
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<img id="logo"  src="cabecera2.png"> 
+			<nav>
+				<a href="index.html">8 de Marzo</a>
+				<a href="mujer_antigüedad.html">La mujer en la antigüedad</a>
+				<a href="mujer_actual.html">La mujer en la actualidad </a>
+				<a href="Asociaciones.html">¿Realmente somos tan diferentes?</a>
+			</nav>
+		</header>
+		<section id="contenido">
+			<h2>El papel de la mujer en la actualidad</h2>
+			<div class="row">
+				<article>
+					<h3>¿Cuál es el papel de la Mujer,hoy en día ? </h3>
+                    <p class="negrita1">¡El que ella quiera!</p>
+                    <p>En pleno siglo 21, estos avances no son equitativos, ya que no  llegan a todas por igual, debido a las diferentes formas y/o percepciones de ver el mundo, en una palabra: la cultura.<br>Debido a la cultura, el progreso hacia el camino de la igualdad de la mujer occidental, es superior a comparación de la mujer de oriente.<br>
+                        <img class="actual" src="imaxes/mujer_actual.png">
+                    la mujer árabe está restringida al ámbito doméstico, depende económicamente de su marido, el acceso a la educación está anulado, además, está rotundamente prohibida de adoptar costumbres occidentales ya que se consideran pecaminosas, asimismo no puede vestir ni pintarse a la manera occidental y siempre deben salir con la burka que es una especie de saco que cubre todo su cuerpo.<br>
+                    Por otro lado, la mujer de este siglo elige qué estudiar, si vivimos solas o en pareja, si tendremos hijos o no, entre otras miles de decisiones que hace 51 años exactamente no era posible.</p>
+                    <ul>
+                        <li>Vestirse con libertad</li>
+                        <li>Votar</li>
+                        <li>Participar en las fuerzas armadas</li>
+                        <li>Divorciarse</li>
+                        <li>Abortar con amparo legal*</li>
+                        <li>Administrar sus propios bienes.</li>
+                        <li>Ejercer el derecho a la planificación familiar</li>
+                    </ul>
+                    <p>Por otro lado,hemos ganado en independencia económica, estudios y respeto profesional,el precio a pagar es muy alto ya que paralelamente nos quejamos de falta de tiempo y estrés, asimismo la presión social por ser perfectas nos angustia y muchas veces deprime, tonces, sucede que mientras eso ocurre, no disfrutamos del proceso y nos auto-exigimos de tal manera que nos llegamos a olvidar de nosotras mismas.  El éxito está sobre valorado y no alcanzarlo nos angustia.
+
+                    Finalmente, espero algún día, deje de existir el “Día de la mujer” como un día de género de la minoría frágil y se cambie por el “Día de Igualdad” ya que reflejaría realmente lo que buscamos: Respeto, porque el respeto al final y al cabo, no tiene género.</p>
+ 
+                </article>
+
+
+
+
+                  
+					
+					
+				
+		
+	</div>
+	<div class="footer">
+	<footer>&copy;2021   Fátima Plata Rueda & María Martinez Ramos</footer>
+	</div>
+        </section>
+    </div>
+</body>
+    
+
+</html>

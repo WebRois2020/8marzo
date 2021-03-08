@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="content-language" content="es">
+
+
+	<title>Mi sitio web</title>
+	<meta name="description" content="Mi sitio web">
+	<meta name="keywords" content="sitio, web">
+
+	<link rel="index" href="./" title="Inicio">
+
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,900&display=swap');
+		html,
+		body,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		table,
+		caption,
+		tbody,
+		tfoot,
+		thead,
+		tr,
+		th,
+		td,
+		article,
+		aside,
+		canvas,
+		details,
+		embed,
+		figure,
+		figcaption,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		output,
+		ruby,
+		section,
+		summary,
+		time,
+		mark,
+		audio,
+		video {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		/* HTML5 reset para antiguos browsers */
+
+		article,
+		aside,
+		details,
+		figcaption,
+		figure,
+		footer,
+		header,
+		hgroup,
+		menu,
+		nav,
+		section {
+			display: block;
+
+		}
+
+		body {
+			line-height: 1;
+		}
+
+		ol,
+		ul {
+			list-style: none;
+		}
+
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0
+		}
+
+		/*Acaba el reset */
+
+		body {
+			font-size: 16px;
+			/*font-family: Georgia, "Times New Roman", Times, serif;*/
+			color: #444;
+			background-color: #CCC;
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin-bottom: .5em;
+			font-weight: bold;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		
+
+		#logo {
+			width: 100%;
+			height: 50%;
+			background-color:white; 
+		}
+
+		h2 {
+			display: block;
+			font-size: 150%;
+			margin: 1em 16px;
+			border-bottom: 1px solid #d9d9d9;
+			color: #1dd8cf;
+			text-shadow: 1px 1px 1px #ccc;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: bold;
+		}
+
+		h3 {
+			font-size: 100%;
+		}
+
+		p,
+		h3 {
+			padding: .5em;
+			padding-bottom: 0;
+			line-height: 1.5
+		}
+		li{
+			list-style-type: circle;
+			list-style-position: inside;
+			font-family: 'Montserrat', sans-serif;
+			margin-top:0.5em;
+		}
+
+		header {
+			text-align: center;
+			/*background-color: #888;*/
+			color: white;
+			margin-bottom: 1em; 
+		}
+
+		#container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 0;
+			background-color: white;
+			box-shadow: 0px 0px 7px 1px #888;
+		}
+
+		#container .row {
+
+			padding: 0.5em;
+		}
+
+		header nav {
+			background-color:black;
+			margin: 0;
+			width: 96.8%;
+			padding: 1em;
+			display: inline-block;
+
+		}
+
+		header nav a {
+			font-family: 'Montserrat', sans-serif;
+			list-style: none;
+			width: 100%;
+			margin:0;
+			padding: 1em;
+			color: white;
+			text-decoration: none;
+			text-align: center;
+			;
+
+		}
+
+		header nav a:hover {
+			color: #85f0da;
+
+		}
+
+		header nav:after,
+		.row:after {
+			content: " ";
+			display: table;
+			clear: both;
+
+		}
+        
+        .republica{
+            float:right;
+            margin:1em 0 0 1em;
+        }
+        .franquismo{    
+                margin: 1em 1em 0.5em 0;    
+        }
+
+		#contenido {
+			margin: 0;
+			padding: 0;
+		}
+
+		#contenido article {
+			float: left;
+			width: 90%;
+			padding: .5em;
+			margin: 0.2em;
+		}
+
+		#contenido article div {
+			border: 1px solid #d9d9d9;
+			padding-bottom: 1em;
+		}
+
+		.text p {
+			padding: 0 1em 2em 1em;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		img {
+			width: 40%;
+			margin: 0em 0.5em 0em 0em;
+			float: left;
+		}
+
+		.imaxe img {
+			width: 100%;
+			margin: 0.2em 0em 0.2em 0em;
+		}
+
+		footer {
+			max-width: 960px;
+			min-height: 50px;
+			margin: 0 auto;
+			font-size: 90%;
+			/*font-style: italic;*/
+			color:white;
+			background-color: #222;
+			margin: 0;
+			padding:1.5em 0em 0em 0em;
+			text-align: center;
+			width:100%;
+			font-family: 'Montserrat', sans-serif;
+
+		}
+		p{
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		@media only screen and (max-width:768px) and (min-width:481px) {
+			#contenido article {
+				width: 50%;
+				padding-bottom: 0;
+	
+			}
+			#contenido article div {
+				height: 190px;
+
+			}
+			header nav li {
+				font-size: 80%;
+
+			}
+		}
+
+		@media only screen and (max-width:480px) {
+			#contenido article {
+				width: 100%;
+				padding-bottom: 0;
+			}
+			h2 {
+				font-size: 130%;
+			}
+			header nav li {
+				float: none;
+				width: 100%;
+				border-bottom: 1px solid #777;
+			}
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<img id="logo"  src="cabecera2.png"> 
+			<nav>
+				<a href="index.html">8 de Marzo</a>
+				<a href="mujer_antigüedad.html">La mujer en la antigüedad</a>
+				<a href="mujer_actual.html">La mujer en la actualidad </a>
+				<a href="Asociaciones.html">¿Realmente somos tan diferentes?</a>
+			</nav>
+		</header>
+		<section id="contenido">
+			<h2>El papel de la mujer en la Antigüedad</h2>
+			<div class="row">
+				<article>
+					<h3>El papel de la mujer en la II República</h3>
+					<p>Desde la Restauración, la mujer fue adquiriendo más protagonismo en la sociedad pero, al ser muy conservadora, éste protagonismo se ceñía casi exclusivamente al mundo familiar.
+					Su educación estaba baseada en la preparación para que en un futuro fueran tanto buena madre como fiel esposa.<br>
+					Por otro lado, en el ámbito estudiantil femenino, había diferencias entre las niñas de clases acomodadas y las de clase baja. Por un lado las clases acomodadas recibían clases de piano, francés.. mientras que las clases bajas debían estudiar como administrarse, cocinar.. y si vivían en el mundo rural debían conocer las actividades agrícolas y trabajar en ellas.
+                        
+                        <img class="republica" src="imaxes/republicamujer.jpg">    
+                            
+					Por otro lado la sociedad siempre permitió un avance de las mujeres siempre que este fuera un beneficio para el varón, pero poco a poco las cosas fueron cambiando
+					También había una gran diferencia en el ámbito laboral entre las propias mujeres ya que las clases obrera, solo trabajaban en el servicio doméstico o como modista, mientras que, la burguesía comenzó a colaborar en las empresas familiares y muchas de ellas estudiaban tanto bachillerato y muy pocas se atrevieron a ir a Universidad<br>
+					Con el final de la I Guerra Mundial, el feminismo europeo entra en España, sobre todo el eco de que en el reino Unido en 1927 podían votar en igualdad de condiciones que el hombre.<br>
+					Con la llegada de la II República, es cuando este cambio se hace más profundo; la Constitución del 31 en su artículo 36 extendió el voto a las mujeres en igualdad con los hombres.<br>
+					Por tanto, con esta medida y otras que le acompañaron, el papel de la mujer dejó de ser un sujeto pasivo en la sociedad para tener voz propia y ser sujeto de su propio destino independiente de sus parientes masculinos. <br>Las nuevas leyes republicanas también fomentaron la incorporación de la mujer en la sociedad, se admitió el divorcio, se despenalizó el adulterio femenino, se normalizó el empleo de la mujer en la función pública, se admitió en las carreras de Registradores y Notarios y podían desempeñar la actividad de la abogacía en igualdad con los hombres y en cualquier otra actividad relacionada con la actividad pública, eso si, quedó relegada de las actividades militares.<br>
+					</p>
+
+
+					<h3>El papel de la mujer en el franquismo</h3>
+
+					<p>A partir de 1939, España retrocedió en todos los ámbitos.
+					La Segunda República favoreció un modelo de mujer moderna, donde el franquismo propugnó lo contrario.<br>
+					Una gran parte de la población femenina se incorporó al ámbito laboral durante y tras la Guerra Civul, debido a las necesidades de las familias y porque mucha de la población masculina había fallecido.
+                        <img class="franquismo" src="imaxes/guiamujer.jpg">
+					Pero, pese a su presencia en éste ámbito, las mujeres obtenían un salario inferior y muchos de esos trabajos los tenían vedados por el simple echo de ser mujer.<br>
+					Por otro lado, el sistema educativo instaurado durante el franquismo tuvo el objetivo de inculcar los modelos del franquismo.
+					Se trata de una educación separada y con conocimientos diferenciados.<br>
+					La educación femenina se orientó a la preparación para la vida en el hogar, ser la perfecta esposa, dirigiéndola hacia la modestia, la obeciencia, el recato....<br>
+					Así, en los centros de la Sección Femenina se impartía un plan de estudios compuesto por las siguientes materias:</p>
+					<ul>
+						<li> Formación Religiosa (Dogma, Moral, Liturgia)</li>
+						<li> Formación Política (Historia de la Falange, Doctrina Política y Económica de la falange)</li>
+						<li> Formación Doméstica (Pedagogía Familiar, Economía Doméstica, Cocina, Corte y Confección…)</li>
+						<li> Música (Coros y Danzas) y Gimnasia.</li>
+					</ul>
+					<p>Trás la implantación del franquismo se introduje una modelo de familia donde prevalecia la autoridad patriarcal.Este tipo de familia se organizaba jerárquicamente, el hombre era la autoridad indiscutible por ley natural y la situación de la mujer era dependencia/sometimiento.<br>
+
+					El modelo de familia era simple y sencillo:
+					<ul>
+						<li>El hombre trabajaba y llevaba dinero a casa</li>
+						<li>La mujer limpiaba cuidaba a los hijos</li>
+					</ul>
+
+					<p> Por otro lado, la familia se articulaba en torno al matrimonio católico, el divorcio fué prohibido y todas aquellas parejas que se diverciaran en la República, volvieron a estar casadas<br>
+					Aún así el modelo de mujer fué evolucionando pasito a pasito, a mediados de los 50 coincidiendo con el desarrollo económico
+					, esa estructura social impuesta en los primeros años del franquismo empezó a cambiar levemente, mediante diversas iniciativas y decretos.</p>
+					
+
+                </article>
+					
+					
+				
+		
+	</div>
+	<div class="footer">
+	<footer>&copy;2021   Fátima Plata Rueda & María Martinez Ramos</footer>
+	</div>
+        </section>
+    </div>
+</body>
+
+</html>
