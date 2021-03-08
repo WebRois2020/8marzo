@@ -1,0 +1,214 @@
+/* ---- Estilos básicos ---------------------------------------------------- */
+
+body {
+	margin: 0.5px;
+	padding: 0px;
+	background: #FFF;
+	font: 12px "verdana", sans-serif;
+	color: #192666;
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+	color: #192666;
+}
+
+a:hover {
+	color: #4F6AD7;
+}
+
+.clear {
+	clear: both;
+}
+
+i{
+	color:#845EC2;
+}
+
+
+/* ---- Layout ------------------------------------------------------------- */
+
+#contenedor {
+	width: 99%;
+	margin: 1em 0 0 auto;
+}
+
+.cabeza{
+	width: 100%;
+}
+#cabecera {
+	width: 100%;
+	background-image: url(encabezado.jpg);
+	border-radius: 0.5em;
+}
+
+#contenido {
+	width: 100%;
+	margin: 0 auto;
+	background: #FFF;
+	border-radius: 0.5em;
+}
+
+
+#pie {
+	clear: both;
+	height: 60px;
+	margin-bottom: 50px;
+	background: #b7a9c6;
+	color: #927da6;
+	border-radius: 0.5em;
+}
+
+p{
+	font-size: 1.6em;
+	margin-bottom: 1.6em;
+}
+
+.nombres{
+	font-size: 0.9em;
+}
+div img{
+    width: 100%;
+}
+
+/* ---- Cabecera ----------------------------------------------------------- 
+
+#logo {
+	color: #B5C4E3;
+	margin: 0;
+}
+
+#logo a {
+	color: #B5C4E3;
+	display: block;
+	line-height: auto;
+}
+
+#logo a:hover {
+	color: #B5C4E3;
+	text-decoration: underline;
+}
+*/
+
+/* ---- Menú --------------------------------------------------------------- */
+
+nav {
+	width: 100%;
+	margin: 0em;
+	padding: 1em;
+	font-size: 1.6em;
+	margin-top: -3em;
+}
+
+nav a {
+
+	width: 100%;
+	margin: 0 10px;
+	padding: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	cursor: pointer;
+	background: #FFF;
+	color: #845EC2;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+nav a:hover{
+	background: #FFF;
+	color: #192666;
+	box-shadow: 5px 5px 5px #253575;
+}
+nav i:hover{
+    color: #192666;
+}
+
+nav .seleccionado {
+	background: #FFF;
+	color: #192666;
+}
+nav .seleccionado i{
+    background: #FFF;
+	color: #192666;
+}
+
+
+#grande{
+	font-size: 1.5em;
+}
+
+/* ---- Contenidos --------------------------------------------------------- */
+
+
+#contenido {
+	width: 100%;
+	margin: 0 auto;
+	background: #FFF;
+	border-radius: 0.5em;
+}
+#contenido #principal {
+	width: 99%;
+	margin: 0em;
+	padding: 0em;
+	background: #FFF;
+}
+#contenido article{
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+#contenido article div {
+	width: 45%;
+	background: ;
+	display: inline-block;
+	margin-left: 1em;
+	margin-right: 1em;    
+}
+
+#contenido .margen {
+   font-size: 1em;
+    padding: .7em;
+   margin-right: 0em;border-radius: 0.5em;
+	border: 3px dashed #927da6;
+}
+
+article .imagen img{
+	width: 100%;
+    box-shadow: 5px 5px 5px #ccc;
+
+}
+article div img.mujeres{
+	width: 100%;
+	margin-left: 30em;
+}
+
+
+#contenido .articulo a {
+	display: inline-block;
+	padding: 0.5em;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 0.5em;
+	border: 1px dashed #A0B9F3;
+}
+
+#contenido .articulo a:hover {
+
+	background: #FFF;
+	color: #FF9000;
+	border-radius: 0.5em;
+	border: 1px dashed #A0B9F3;
+}
+
+
+/* ---- Pie ---------------------------------------------------------------- */
+
+#pie p {
+	margin: 0;
+	padding: 1em;
+}

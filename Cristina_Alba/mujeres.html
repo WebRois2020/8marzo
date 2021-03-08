@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="content-language" content="es" />
+
+	<script src="https://kit.fontawesome.com/f35a40f132.js" crossorigin="anonymous"></script>
+	<title>8M</title>
+	<meta name="description" content="Mi sitio web"/>
+	<meta name="keywords" content="sitio, web"/>
+
+	<link rel="index" href="./" title="Inicio" />
+	<link rel="stylesheet" media="screen,projection" type="text/css" href="css/principal.css"/>
+	<style type="text/css">
+		.galeria {
+			width: 90%;
+			margin: auto;
+			list-style: none;
+			padding: 20px;
+			box-sizing: border-box;
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.galeria li {
+			margin: 5px;
+
+		}
+
+		.galeria img {
+			width: 150px;
+			height: 100px;
+
+		}
+
+		/*Estilos del modal*/
+
+		.modal {
+			display: none;
+           
+		}
+
+		.modal:target {
+
+			display: block;
+			position: absolute;
+			background: rgba(0, 0, 0, 0.8);
+			top: 0px;;
+            left: 0px;
+			
+			width: 100%;
+			height: 100%;
+            margin-left: 0px;
+            margin-top: 0px;
+		}
+
+		.modal h3 {
+			color: #fff;
+			font-size: 30px;
+			text-align: center;
+			margin: 1em;
+		}
+
+		.imagen {
+			width:75vw;
+			height: 50%;
+
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.imagen a {
+			color: #fff;
+			font-size: 40px;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+
+		.imagen a:nth-child(2) {
+			margin: 0;
+			height: 100%;
+			flex-shrink: 2;
+		}
+
+		.imagen img {
+			width: 50vw;
+			height: auto;
+			border: 7px solid #fff;
+			box-sizing: border-box;
+		}
+#img1, #img2 {
+			
+		}
+		.cerrar {
+			display: block;
+			background: #fff;
+			width: 25px;
+			height: 25px;
+			margin: 7vw auto;
+			text-align: center;
+			text-decoration: none;
+			font-size: 25px;
+			color: #000;
+			padding: 5px;
+			border-radius: 50%;
+			line-height: 25px;
+		}
+        
+        div{
+            width: 70%;
+            margin-left: 15em;
+        }
+	</style>
+	
+</head>
+
+<body>
+	<!-- Contenedor -->
+	<div id="contenedor">
+		<!-- Cabecera -->
+		<header id="cabecera">
+			<img class="cabeza" src="imagenes/encabezadoooo.jpg">
+			<!-- Menú principal -->
+			<nav>
+				<a  href="index.html"><i class="fas fa-venus" id="grande"></i></a>
+				<a href="cronograma.html">Cronología</a>
+				<a class="seleccionado" href="mujeres.html">Mujeres en la ciencia</a>
+			</nav>
+			<!--  FIN menú  -->
+
+		</header>
+		<!--  FIN cabecera -->
+
+		<div id="contenido">
+			<section id="principal">
+			<h1>Mujeres en la ciencia</h1>
+
+			<div>
+			<section>
+			<ul class="galeria">
+				<li><a href="#img1"><img src="imagenes/curie.jpg"></a></li>
+				<li><a href="#img2"><img src="imagenes/lamarr.jpg"></a></li>
+				<li><a href="#img3"><img src="imagenes/tereshkova.jpg"></a></li>
+				<li><a href="#img4"><img src="imagenes/lovelace.jpg"></a></li>
+				<li><a href="#img5"><img src="imagenes/blackwell.jpg"></a></li>
+				<li><a href="#img6"><img src="imagenes/masmujeres.jpg"></a></li>
+			</ul>
+
+			<div class="modal" id="img1">
+				<h3>Marie Curie</h3>
+				<div class="imagen">
+					<a href="#img6">&#60;</a>
+					<a href="#img2"><img src="imagenes/curie.jpg"></a>
+					<a href="#img2">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img2">
+				<h3>Hedy Lamarr</h3>
+				<div class="imagen">
+					<a href="#img1">&#60;</a>
+					<a href="#img3"><img src="imagenes/lamarr.jpg"></a>
+					<a href="#img3">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img3">
+				<h3>Valentina Tereshkova</h3>
+				<div class="imagen">
+					<a href="#img2">&#60;</a>
+					<a href="#img4"><img src="imagenes/tereshkova.jpg"></a>
+					<a href="#img4">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img4">
+				<h3>Ada Lovelace</h3>
+				<div class="imagen">
+					<a href="#img3">&#60;</a>
+					<a href="#img5"><img src="imagenes/lovelace.jpg"></a>
+					<a href="#img5">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img5">
+				<h3>Elizabeth Blackwell</h3>
+				<div class="imagen">
+					<a href="#img4">&#60;</a>
+					<a href="#img6"><img src="imagenes/blackwell.jpg"></a>
+					<a href="#img6">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+			<div class="modal" id="img6">
+				<h3>Más mujeres en la científicas</h3>
+				<div class="imagen">
+					<a href="#img5">&#60;</a>
+					<a href="#img1"><img src="imagenes/masmujeres.jpg"></a>
+					<a href="#img1">></a>
+				</div>
+				<a class="cerrar" href="">X</a>
+			</div>
+
+		</section>
+ 		</div>
+ 		
+ 	</section>
+ </div>
+		
+		<footer id="pie">
+			<p id="copyright">&copy; 2021 Alba&Cristina</p>
+		</footer>
+		<!-- FIN pie de página -->
+	</div>
+	<!-- FIN contenedor -->
+
+</body>
+
+</html>
