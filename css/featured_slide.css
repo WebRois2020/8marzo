@@ -89,7 +89,7 @@
 
 #slider .category p {
 	line-height: 1.2em;
-	margin: 3em 0 12px 0;
+	margin: 0em 0 12px 0;
 	font-family: serif;
 	font-size: 1.05em;
 }
@@ -115,7 +115,7 @@ a.cssToolTip span {
 	box-shadow: 5px 5px 5px #fff;
 	color: #000;
 	display: none;
-	/* El tooltip por defecto estara oculto */
+	/* El tooltip por defecto esta oculto */
 	font-size: 0.8em;
 	width: 50%;
 	position: relative;
@@ -135,4 +135,7 @@ a.cssToolTip span {
 
 a.cssToolTip:hover span {
 	display: block;
+	position: fixed;
+	bottom: 00%;
+	left: 0%;
 }
