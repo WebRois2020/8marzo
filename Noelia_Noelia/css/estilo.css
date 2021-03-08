@@ -1,0 +1,221 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.fondo{
+	background-color: #ef848a;
+}
+
+.portada img{
+	width: 70%;
+	height: 38em;
+	margin-left:13em;
+	margin-top: 2.8em;
+	
+}
+nav{
+    width: 100%;
+	height: 10em;
+	background-color: #846b89;
+	font-family: 'Satisfy', cursive;
+	}
+
+nav a{
+
+	font-size:2.8em;
+	margin-left: 1em;
+	color:white;
+	text-decoration: none;
+}
+
+.vivas{
+	margin-top: 2em;
+    margin-left: 0;
+}
+#hoxe{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#hoxe img {
+    border:6px solid #6e2c5a;
+}
+h1{
+	font-family: 'Satisfy', cursive;
+	color:#6e2c5a;
+	font-size:3em;
+	text-align: center;
+	font-weight: bolder;
+
+}
+.negrita{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.1em;
+    margin-left: 2em;
+}
+body{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.incendio{
+
+}
+.texto_imagen{
+	display: inline-block;
+}
+#general{
+	display: inline-block;
+}
+div{
+	
+}
+div .incendio{
+	border:6px solid #6e2c5a;
+
+	width: 95%;
+	
+}
+div .texto_imagen{
+	
+	width: 90%;
+	line-height: 1.45em;
+
+}
+section{
+	margin-top: 2em;
+	margin-right: 1.5em;
+	margin-left: 1.6em;
+	width: 100%;
+	display: inline-flex;
+}
+p{
+	font-family: 'Noto Sans', sans-serif;
+}
+h2{
+	font-family: 'Satisfy', cursive;
+	color:#6e2c5a;
+	font-size: 2em;
+	text-align: center;
+	font-weight: bolder;
+}
+.mulleres{
+	width: 80%;
+	
+	border:6px solid #6e2c5a;
+}
+
+.texto2{
+line-height: 1.4em;
+width: 85%;
+font-weight: bold;
+line-height: 2em;
+padding: 2em;
+}
+
+#mulleres{
+
+	width: 55%;
+	margin: 0 auto;
+}
+#rosalía{
+	border:6px solid #6e2c5a;
+	width: 65%;
+	margin-left: 5em;
+}
+.texto_rosalía{
+	
+	line-height: 1.3em;
+	margin-right: 10%;
+	margin-bottom: 2em;
+}
+#emilia{
+border:6px solid #6e2c5a;
+		width: 126%;
+		height:15em;
+	margin-left: 5em;
+}
+.texto_emilia{
+	width: 100%;
+
+	line-height: 1.5em;
+	margin-left: 17em;
+
+	
+}
+#sofia{
+	border:6px solid #6e2c5a;
+	width: 66%;
+	margin-left: 5em;
+	margin-top: 1.7em;
+
+}
+.texto_sofia{
+	line-height:1.4em;
+	margin-top: 0.7em;
+}
+#maruja{
+	border:6px solid #6e2c5a;
+	width: 68%;
+	margin-left: 5em;
+	margin-top: 1.7em;
+}
+.texto_maruja{
+	
+	width: 90%;
+	line-height:2em;
+	margin-top: 0.7em;
+	margin-right: 1em;
+}
+#concepción{
+	border:6px solid #6e2c5a;
+	width: 70%;
+	margin-left: 5em;
+	margin-top: 1.7em;
+}
+.texto_concepcion{
+	
+	width: 120%;
+
+	margin-top: 0.7em;
+	margin-right:8em;
+}
+#angela{
+	margin-left: 5em;
+	border:6px solid #6e2c5a;
+	width: 100%;
+	margin-top: 1.7em;
+}
+.texto_angela{
+	width: 60%;
+	margin-left: 10em;
+	margin-top: 1.7em;
+	
+}
+
+.clase {
+	width: 50%;
+	margin-left: 2.7em;
+font-weight: bolder;
+}
+
+.gomez {
+	margin-left: 5em;
+    font-weight: bold;
+}
+
+.mulleres_hoxe {
+	margin-left: 3em;
+}
+.noelia{
+	width: 50%;
+	font-weight: bolder;
+	margin-left: 1.2em;
+	
+}
+a{
+	color:#6e2c5a;
+	
+}
+
