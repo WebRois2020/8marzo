@@ -1,0 +1,173 @@
+/* Los tipos de letra no estándar hay que importarlos */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+body {
+	font-family: 'Shippori Mincho B1', serif;
+	margin: 0px;
+	line-height: 2em;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 60px;
+	color: #833388;
+	font-weight: 600;
+	letter-spacing: -3px;
+	text-align: center;
+}
+
+h2,h3 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 32px;
+	color: #444;
+	font-weight: 600;
+	letter-spacing: -3px;
+}
+
+
+.cabecera {
+	background-color: #71408f;
+	min-height: 100px;
+	text-align: center;
+}
+
+.cabecera img {
+	width: 80%;
+	height: 15em;
+	border:none;
+}
+
+.cuerpo {
+	max-width: 1100px;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contenido {
+	float: left;
+	width: 65%;
+}
+
+.margen{
+	margin-bottom: 4em;
+}
+
+/*div.contenido img {
+	width: 100%;
+}*/
+
+.barra-lateral {
+	padding-top: 40px;
+	float: right;
+	width: 30%;
+}
+
+.barra-lateral h3 {
+	color: #444;
+	text-align: center;
+	border-bottom: 1px solid #444;
+}
+
+.barra-lateral img {
+	width: 100%;
+	border-radius: 1em;
+}
+
+.pie {
+	clear: both;
+	color: white;
+	background-color: #71408f;
+	padding: 10px;
+	text-align: center;
+}
+
+.lista{
+	list-style-type: disc;
+}
+
+
+.margin{
+	margin-left: 4em;
+}
+
+.ancla{
+	background-color: white;
+}
+
+li{
+	list-style-type: none;
+
+}
+
+ul{
+	margin-top: 2em;
+}
+
+a{
+	text-decoration: none;
+	background-color: #daa1e6;
+	line-height: 3em;
+	padding: 0.5em;
+	border-radius: 1em;
+	color: black;
+}
+
+a:hover{
+	font-size: 20px;
+}
+
+i{
+	font-size: 18px;
+	color:#71408f;
+}
+
+.left{
+	float: left;
+	width: 35%;
+	border-radius: 1em;
+	margin-right: 1em;
+}
+
+.right{
+	float: right;
+	width: 35%;
+	border-radius: 1em;
+	margin-left: 1em;
+}
+
+.icono{
+	width: 18%;
+}
+
+.negrita{
+	font-weight: bold;
+}
+
+@media (max-width: 640px) {
+	.barra-lateral {
+		display: none;
+	}
+
+	.cuerpo {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contenido {
+		float: none;
+		width: 100%;
+	}
+
+	h1,
+	h2,
+	h3 {
+		text-align: center;
+	}
+}
+
+
